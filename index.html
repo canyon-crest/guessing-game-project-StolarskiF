@@ -8,20 +8,24 @@
     <p id="date"></p>
 
     <h3>Level</h3>
-    <input type="radio" name="level" id="e" value="3" checked><label for="e">Easy</label>
-    <input type="radio" name="level" id="m" value="10"><label for="m">Medium</label>
-    <input type="radio" name="level" id="h" value="100"><label for="h">Hard</label>
+    <input type="radio" name="level" id="Easy" value="3" checked>
+    <label for="Easy">Easy</label>
+    <input type="radio" name="level" id="Medium" value="10">
+    <label for="Medium">Medium</label>
+    <input type="radio" name="level" id="Hard" value="100">
+    <label for="Hard">Hard</label>
 
     <button id="playBtn">Play</button>
 
     <h3 id="msg">Select a Level</h3>
-    <input type="text" id="guess">
+
+    <input type="text" id="guess" disabled>
     <button id="guessBtn" disabled>Guess</button>
     <button id="giveUp" disabled>Give Up</button>
 
     <h3>Stats</h3>
     <p id="wins">Total wins: 0</p>
-    <p id="avgScore">Average Score: </p>
+    <p id="avgScore">Average Score:</p>
 
     <h3>Leaderboard</h3>
     <ol>
