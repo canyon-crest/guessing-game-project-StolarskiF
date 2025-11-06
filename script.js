@@ -32,5 +32,18 @@ function play(){
 }
 
 function makeGuess(){
+    let userGuess = parseInt(guess.value);
+    if(isNaN(userGuess)  || userGuess == ""){
+        msg.innerHTML = "Invalid. Guess a #1-" + level;
+        return;
+    }
+    score++;
+    if(userGuess < answser)
+        msg.innerHTML = "Too low, guess a #1-" + level;
+    else if(userGuess > answer)
+        msg.innerHTML = "Too high, guess a #1-" + level;
+    else{
+        msg.innerHTML = "Correct! You win, it took " + score + " tries.";
+    }
 
 }
